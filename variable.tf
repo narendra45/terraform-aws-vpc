@@ -120,12 +120,12 @@ variable "is_peering_required" {
 }
 
 variable "accepter_vpc_id" {
-  type = map
-  default = {}
+  type = string
+  default = ""
   
 }
 
 variable "vpc_peering_tags" {
-  type = string
-  default = ""
+  type = map
+  default = {} 
 }
